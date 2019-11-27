@@ -16,13 +16,13 @@ GOTCHAS: Each separate use of `Context.Provider` creates a new, separate flow of
 
 
 ```
-// button will be red
+// value will be red
 <ColourContext.Provider value='red'>
     ...
 </ColourContext.Provider>
 
 
-// button will be whatever is in the state
+// value will be whatever is in the state
 <ColourContext.Provider value={{ ...this.state.colour}}>
     ...
 </ColourContext.Provider>
